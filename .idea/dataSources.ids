@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - hotel@localhost" uuid="55e4004d-c5d9-4f07-82f4-1f326c7b3203">
+    <database-info product="MySQL" version="5.7.13" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="hotel">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="homework1"/>
+      <schema id="3" name="information_schema"/>
+      <schema id="4" name="j2ee"/>
+      <schema id="5" name="mysql"/>
+      <schema id="6" name="performance_schema"/>
+      <schema id="7" name="study"/>
+      <schema id="8" name="sys"/>
+      <schema id="9" name="test"/>
+      <table id="10" parent="1" name="unified_hotel"/>
+      <table id="11" parent="1" name="unified_room"/>
+      <column id="12" parent="10" name="id">
+        <comment>自增id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="13" parent="10" name="name">
+        <comment>酒店名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(45)|0</data-type>
+      </column>
+      <column id="14" parent="10" name="level">
+        <comment>酒店级别</comment>
+        <data-type>enum(&apos;经济&apos;, &apos;舒适&apos;, &apos;高档&apos;, &apos;豪华&apos;)|0</data-type>
+        <default-expression>&apos;经济&apos;</default-expression>
+      </column>
+      <column id="15" parent="10" name="location">
+        <comment>地理位置</comment>
+        <data-type>varchar(255)|0</data-type>
+        <default-expression>&apos;null&apos;</default-expression>
+      </column>
+      <column id="16" parent="10" name="score">
+        <comment>酒店评分，5分制</comment>
+        <data-type>double|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="17" parent="10" name="startprice">
+        <comment>起价</comment>
+        <data-type>double|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="18" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="11" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="20" parent="11" name="hid">
+        <comment>外键：酒店id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="21" parent="11" name="roomtype">
+        <comment>房间类型：大床房，双床房等等</comment>
+        <data-type>varchar(255)|0</data-type>
+        <default-expression>&apos;null&apos;</default-expression>
+      </column>
+      <column id="22" parent="11" name="decription">
+        <comment>房型描述：面积，有无窗户等等</comment>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="23" parent="11" name="roomservice">
+        <comment>房间服务用分号隔开：wifi；早餐供应；空调</comment>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="24" parent="11" name="price">
+        <comment>房间价格</comment>
+        <data-type>double|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="25" parent="11" name="hotel_id_idx">
+        <columns>hid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="26" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="27" parent="11" name="hotel_id">
+        <columns>hid</columns>
+        <ref-key>~.unified_hotel.PRIMARY</ref-key>
+        <cascade-update-rule>no_action</cascade-update-rule>
+        <cascade-delete-rule>delete</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>
