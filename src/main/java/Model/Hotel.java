@@ -3,7 +3,7 @@ package Model;
 /**
  * Created by phoebegl on 2017/6/8.
  */
-public class hotel {
+public class Hotel {
 
     private int id;
     private String name;

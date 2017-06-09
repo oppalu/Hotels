@@ -3,7 +3,7 @@ package Model;
 /**
  * Created by phoebegl on 2017/6/8.
  */
-public class room {
+public class Room {
 
     private int id;
     private int hid;

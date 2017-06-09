@@ -2,7 +2,7 @@ CREATE DATABASE  IF NOT EXISTS `hotel` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `hotel`;
 -- MySQL dump 10.13  Distrib 5.7.12, for osx10.9 (x86_64)
 --
--- Host: localhost    Database: hotel
+-- Host: localhost    Database: Hotel
 -- ------------------------------------------------------
 -- Server version	5.7.16
 
