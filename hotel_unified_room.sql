@@ -2,7 +2,7 @@ CREATE DATABASE  IF NOT EXISTS `hotel` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `hotel`;
 -- MySQL dump 10.13  Distrib 5.7.12, for osx10.9 (x86_64)
 --
--- Host: localhost    Database: Hotel
+-- Host: localhost    Database: hotel
 -- ------------------------------------------------------
 -- Server version	5.7.16
 
@@ -56,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-06-08 18:12:34
+-- Dump completed on 2017-06-10 13:01:16

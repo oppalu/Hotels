@@ -2,7 +2,7 @@ CREATE DATABASE  IF NOT EXISTS `hotel` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `hotel`;
 -- MySQL dump 10.13  Distrib 5.7.12, for osx10.9 (x86_64)
 --
--- Host: localhost    Database: Hotel
+-- Host: localhost    Database: hotel
 -- ------------------------------------------------------
 -- Server version	5.7.16
 
@@ -31,6 +31,7 @@ CREATE TABLE `unified_hotel` (
   `location` varchar(255) DEFAULT 'null' COMMENT '地理位置',
   `score` double DEFAULT '0' COMMENT '酒店评分，5分制',
   `startprice` double DEFAULT '0' COMMENT '起价',
+  `img` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -41,7 +42,7 @@ CREATE TABLE `unified_hotel` (
 
 LOCK TABLES `unified_hotel` WRITE;
 /*!40000 ALTER TABLE `unified_hotel` DISABLE KEYS */;
-INSERT INTO `unified_hotel` VALUES (1,'重庆江北机场丽峰酒店','舒适','重庆渝北区江北国际机场一碗水后街鹭岭尚品1号楼',4.5,199);
+INSERT INTO `unified_hotel` VALUES (1,'重庆江北机场丽峰酒店','舒适','重庆渝北区江北国际机场一碗水后街鹭岭尚品1号楼',4.5,199,'http://userimg.qunar.com/imgs/201511/14/JhS1_th1MtiVE-YBJ180.jpg');
 /*!40000 ALTER TABLE `unified_hotel` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-06-08 18:12:34
+-- Dump completed on 2017-06-10 13:01:16
