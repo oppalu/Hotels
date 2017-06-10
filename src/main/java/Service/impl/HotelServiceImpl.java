@@ -70,6 +70,7 @@ public class HotelServiceImpl implements HotelService {
         r1.setDescription("面积25㎡;位于1-7层;大床;独立卫浴;无窗");
         r1.setRoomservice("宽带上网;免费市内电话;空调;吹风机;24小时热水");
         r1.setPrice(209);
+        r1.setDatafrom("meituan");
         Room r2 = new Room();
         r2.setId(2);
         r2.setHid(1);
@@ -77,6 +78,7 @@ public class HotelServiceImpl implements HotelService {
         r2.setDescription("面积30-40㎡;位于2-4层;双床;独立卫浴;无窗");
         r2.setRoomservice("宽带上网;免费市内电话;空调;吹风机;24小时热水");
         r2.setPrice(239);
+        r2.setDatafrom("qunar");
         rooms.add(r1) ;
         rooms.add(r2);
         String result = "";

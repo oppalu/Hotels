@@ -11,6 +11,7 @@ public class Room {
     private String description;
     private String roomservice;
     private double price;
+    private String datafrom;
 
     public int getId() {
         return id;
@@ -59,4 +60,11 @@ public class Room {
     public void setPrice(double price) {
         this.price = price;
     }
+    public String getDatafrom() {
+		return datafrom;
+	}
+
+	public void setDatafrom(String datafrom) {
+		this.datafrom = datafrom;
+	}
 }
