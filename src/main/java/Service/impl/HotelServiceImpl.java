@@ -31,6 +31,7 @@ public class HotelServiceImpl implements HotelService {
         h1.setLocation("重庆渝北区江北国际机场一碗水后街鹭岭尚品1号楼");
         h1.setScore(4.5);
         h1.setStartprice(199);
+        h1.setImg("http://userimg.qunar.com/imgs/201511/14/JhS1_th1MtiVE-YBJ180.jpg");
         Hotel h2 = new Hotel();
         h2.setId(2);
         h2.setName("南京金陵饭店");

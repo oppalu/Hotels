@@ -11,6 +11,7 @@ public class Hotel {
     private String location;
     private double score;
     private double startprice;
+    private String img;
 
     public int getId() {
         return id;
@@ -58,5 +59,13 @@ public class Hotel {
 
     public void setStartprice(double startprice) {
         this.startprice = startprice;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }
