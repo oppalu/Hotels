@@ -120,7 +120,7 @@ public class IntergrateRoom {
 					  "`datafrom` varchar(10) NOT NULL ,"+
 					  "`hid` int(11) NOT NULL COMMENT '外键：酒店id',"+
 					  "`roomtype` varchar(255) DEFAULT 'null' COMMENT '房间类型：大床房，双床房等等',"+
-					  "`decription` varchar(255) DEFAULT NULL COMMENT '房型描述：面积，有无窗户等等',"+
+					  "`description` varchar(255) DEFAULT NULL COMMENT '房型描述：面积，有无窗户等等',"+
 					  "`roomservice` varchar(255) DEFAULT NULL COMMENT '房间服务用分号隔开：wifi；早餐供应；空调',"+
 					  "`price` double DEFAULT '0' COMMENT '房间价格'"+
 					") DEFAULT CHARSET=utf8;";
