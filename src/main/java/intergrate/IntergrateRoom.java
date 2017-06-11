@@ -117,6 +117,7 @@ public class IntergrateRoom {
 			stmt.executeUpdate(sql);
 			sql = "CREATE TABLE `intergrate_room` ("+
 					  "`id` int(11) NOT NULL ,"+
+					  "`datafrom` varchar(10) NOT NULL ,"+
 					  "`hid` int(11) NOT NULL COMMENT '外键：酒店id',"+
 					  "`roomtype` varchar(255) DEFAULT 'null' COMMENT '房间类型：大床房，双床房等等',"+
 					  "`decription` varchar(255) DEFAULT NULL COMMENT '房型描述：面积，有无窗户等等',"+
@@ -129,7 +130,7 @@ public class IntergrateRoom {
 
 			for (int i = 0; i < roomlist.size(); i++) {
 				Room temp = roomlist.get(i);
-				sql = sql + "(" + temp.getId() + ","+temp.getHid()+",'" + temp.getRoomtype() + "','" + temp.getDescription() + "','"
+				sql = sql + "(" + temp.getId() + ",'"+temp.getDatafrom()+"',"+temp.getHid()+",'" + temp.getRoomtype() + "','" + temp.getDescription() + "','"
 						+ temp.getRoomservice() + "'," + temp.getPrice()+"),";
 			}
 			sql = sql.substring(0, sql.length() - 1) + ";";
