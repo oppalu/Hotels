@@ -1,4 +1,4 @@
-package Dao;
+package intergrate;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -158,7 +158,7 @@ public class IntergrateRoom {
 
 	}
 
-	public static void main(String[] args) {
-		new IntergrateRoom().build_table_r();
-	}
+//	public static void main(String[] args) {
+//		new IntergrateRoom().build_table_r();
+//	}
 }

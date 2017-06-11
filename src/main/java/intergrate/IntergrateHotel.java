@@ -1,4 +1,4 @@
-package Dao;
+package intergrate;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -227,7 +227,7 @@ public class IntergrateHotel {
 		}
 	}
 
-	public static void main(String[] args) {
-		new IntergrateHotel().build_table_h();
-	}
+//	public static void main(String[] args) {
+//		new IntergrateHotel().build_table_h();
+//	}
 }
